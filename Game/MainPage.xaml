@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             NavigationPage.HasNavigationBar="False"
+             x:Class="Game.MainPage"
+             Visual="Material">
+
+    <StackLayout BackgroundColor="LightGoldenrodYellow">
+        <Label Text="Hello" TextColor="Black" FontAttributes="Bold" FontSize="30" Padding="0,30,0,0" HorizontalOptions="Center"/>
+
+        <Grid HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" >
+
+
+            <Button x:Name="White" BackgroundColor="White" Text="White" TextColor="Black" Clicked="White_Clicked" HeightRequest="120"
+                    Grid.Column="0" Grid.Row="0" CornerRadius="120" />
+            <Button x:Name="Red" BackgroundColor="Red" Text="Red" TextColor="White" Clicked="Red_Clicked" HeightRequest="120"
+                    Grid.Column="1" Grid.Row="0" CornerRadius="120"/>
+            <Button x:Name="Blue" BackgroundColor="Blue" Text="Blue" TextColor="White" Clicked="Blue_Clicked" HeightRequest="85"
+                    Grid.Column="0" Grid.Row="1" CornerRadius="120"/>
+            <Button x:Name="Yellow" BackgroundColor="Yellow" Text="Yellow" TextColor="Black" Clicked="Yellow_Clicked" HeightRequest="85"
+                    Grid.Column="1" Grid.Row="1" CornerRadius="120"/>
+            <Button x:Name="Green" BackgroundColor="Green" Text="Green" TextColor="White" Clicked="Green_Clicked" HeightRequest="85"
+                    Grid.Column="0" Grid.Row="2" CornerRadius="120"/>
+            <Button x:Name="Black" BackgroundColor="Black" Text="Black" TextColor="White" Clicked="Black_Clicked" HeightRequest="85"
+                    Grid.Column="1" Grid.Row="2" CornerRadius="120"/>
+            <Button x:Name="Pink" BackgroundColor="DeepPink" Text="Pink" TextColor="White" Clicked="Pink_Clicked" HeightRequest="85"
+                    Grid.Column="0" Grid.Row="3" CornerRadius="120"/>
+            <Button x:Name="Orange" BackgroundColor="DarkOrange" Text="Orange" TextColor="White" Clicked="Orange_Clicked" HeightRequest="85"
+                    Grid.Column="1" Grid.Row="3" CornerRadius="120"/>
+
+
+        </Grid>
+        <Button x:Name="mybtn" Text="Next Game " Clicked="mybtn_Clicked" HorizontalOptions="CenterAndExpand" Margin="0,0,0,20"
+                BackgroundColor="Purple" FontSize="20" CornerRadius="5"/>
+    </StackLayout>
+
+</ContentPage>
